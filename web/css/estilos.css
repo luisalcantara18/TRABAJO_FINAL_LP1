@@ -1,0 +1,141 @@
+
+/*AQUI ESTOY IMPORTANDO UNA FUNTE DE GOOGLE FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Dosis|Questrial');
+
+*{
+    margin: 0;
+    padding: 0;
+ }
+
+ul, ol{
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    
+}
+/*
+AQUI ESTA LA PARTE DEL NAVEGADOR, CON LOS EFECTOS DE DEGRADE */
+
+nav{
+    width: 1000px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 4px;
+  
+    border-bottom:1px solid #555555;
+    background: #8b8b8b; /* Old browsers */
+    border-bottom: 1px solid #555555; 
+    background: -webkit-linear-gradient(top,  #757575 0%,#7e7e7e 49%,#6a6a6a 50%,#8b8b8b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #757575 0%,#7e7e7e 49%,#6a6a6a 50%,#8b8b8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#8b8b8b',GradientType=0 ); /* IE6-9 */
+}
+
+
+.menu{
+    width:85%;
+    display:table;
+    table-layout:fixed;
+    float:left;
+/*    AQUI ESTA LA TRANSICION QUE HACE LA BARRA DE TAREAS*/
+    transition:all .5s ease;
+   
+}
+
+.menu li{
+    display: table-cell;
+    overflow: hidden;
+    width: 100%;
+    border-right: 1px solid #5c5c5c;
+    border-left: 1px  solid rgba(255,255,255,.2);
+}
+
+.menu li:first-child{
+    border-left: none;
+    
+}
+
+.menu li:first-child:hover{
+    border-left: none;
+    
+}
+
+/*EFECTOS DE LAS CAJAS*/
+.menu li a{
+    color: #ffffff;
+    display: block;
+/*    FUENTE DE GOOGLE FONTS*/
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Questrial', sans-serif;
+/* ------------------------------------------   */
+    font-size: 14px;
+    padding: 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-shadow:1px 1px 0px rgba(0,0,0.3);
+    
+    
+}
+
+
+
+
+.menu li:hover{
+    background: rgba(0,0,0,.3);
+    border-right:1px solid transparent;
+    border-left:1px solid transparent;
+    border-bottom: none;
+    
+    
+}
+
+.menu li:active {
+    background:rgba(0,0,0,.3);
+    box-shadow: inset 0px 9px 9px rgba(0,0,0,1);  
+}
+
+
+.serch_bar{
+    width: 15%;
+    float:left;
+    padding:7px 10px;
+    box-sizing: border-box;
+    position: relative;
+    transition:all .5s ease;
+    
+}
+
+/*EFECTO DE DRGRADE DE LA BARRA DE BUSQUEDA*/
+.serch_bar input{
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    border: none;
+    border-bottom: 1px solid #858585;
+    padding: 0px 10px 0px 25px;
+    box-sizing: border-box;
+    height: 22px;
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,.7);
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7e7e7e+0,797979+47,6a6a6a+49,6e6e6e+49,767676+100,8b8b8b+100,8b8b8b+100,8b8b8b+100 */
+    background: #7e7e7e; /* Old browsers */
+    background: -moz-linear-gradient(top,  #7e7e7e 0%, #797979 47%, #6a6a6a 49%, #6e6e6e 49%, #767676 100%, #8b8b8b 100%, #8b8b8b 100%, #8b8b8b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #7e7e7e 0%,#797979 47%,#6a6a6a 49%,#6e6e6e 49%,#767676 100%,#8b8b8b 100%,#8b8b8b 100%,#8b8b8b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #7e7e7e 0%,#797979 47%,#6a6a6a 49%,#6e6e6e 49%,#767676 100%,#8b8b8b 100%,#8b8b8b 100%,#8b8b8b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7e7e7e', endColorstr='#8b8b8b',GradientType=0 ); /* IE6-9 */
+    
+}
+.serch_bar input:focus{
+    background: #ffffff;
+    box-shadow: none;
+}
+
+/* ESTILOS DEL ICONO DE LA LUPA*/
+.icon-search {
+    position: absolute;
+    bottom: 10px;
+    left: 15px;
+    color: white;
+    text-decoration: none;
+}
+
